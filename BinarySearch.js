@@ -8,9 +8,9 @@
  * @param {Number} value
  * @return {Number|null}
  */
+const selectionSort = require('./SelectionSort');
 function binarySearch(array, value) {
-  array.sort((a, b) => a - b); //Binary search expects sorted array, will replace this with sorting algorithm soon
-
+selectionSort(array, 'asc'); //
   //Define low and high of an array
   let low = 0;
   let high = array.length -1;

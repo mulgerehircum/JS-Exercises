@@ -14,8 +14,8 @@ function selectionSort(array, order = "asc") {
     // Second loop, finds the smallest element for ascending order or the largest for descending order
     for (let j = i + 1; j < array.length; j++) {
       if (
-        (order == "asc" && array[j] > array[curElement]) ||
-        (order == "desc" && array[j] < array[curElement])
+        (order == "desc" && array[j] > array[curElement]) ||
+        (order == "asc" && array[j] < array[curElement])
       ) {
         curElement = j;
       }
@@ -27,6 +27,8 @@ function selectionSort(array, order = "asc") {
   }
   return array;
 }
+module.exports = selectionSort;
+
 //Example cases
 let array1 = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
 let array2 = [4.2, 3.14, 1.618, 2.718, 9.81, 1.414, 6.67, 0.577];
